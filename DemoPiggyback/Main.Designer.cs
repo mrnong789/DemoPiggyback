@@ -41,8 +41,6 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             dgvTable = new DataGridView();
             helpProvider1 = new HelpProvider();
-            button2 = new Button();
-            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvTable).BeginInit();
             SuspendLayout();
@@ -156,33 +154,12 @@
             dgvTable.TabIndex = 9;
             dgvTable.CellFormatting += dgvTable_CellFormatting;
             // 
-            // button2
-            // 
-            button2.Location = new Point(723, 154);
-            button2.Name = "button2";
-            button2.Size = new Size(8, 8);
-            button2.TabIndex = 10;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(1148, 231);
-            button3.Name = "button3";
-            button3.Size = new Size(150, 46);
-            button3.TabIndex = 11;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1933, 728);
-            Controls.Add(button3);
-            Controls.Add(button2);
             Controls.Add(dgvTable);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
@@ -216,7 +193,5 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private DataGridView dgvTable;
         private HelpProvider helpProvider1;
-        private Button button2;
-        private Button button3;
     }
 }
